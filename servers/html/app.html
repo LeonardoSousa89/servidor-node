@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,body{
+            margin: 0;
+            font-family: fantasy;
+            height: 100%;
+        }
+        header{
+            grid-area: header;
+            border: solid white 3px;
+        }
+        nav{
+            grid-area: nav;
+            border: solid white 3px;
+        }
+        main{
+            grid-area: main;
+            border: solid white 3px;
+        }
+        footer{
+            grid-area: footer;
+            border: solid white 3px;
+        }
+        body{
+            background-color: black;
+            color: whitesmoke;
+
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 200px 1fr 200px;
+            grid-template-areas: 
+                'header  header'
+                'nav       main'
+                'footer  footer'
+            ;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <main>
+        <h1>main</h1>
+    </main>
+    <nav>
+        <h1>nav</h1>
+    </nav>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>
